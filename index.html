@@ -6,7 +6,6 @@
     <title>Personal Landing Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/brands.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -30,10 +29,13 @@
             color: #4a4a4a;
             font-size: 1.5rem;
             margin: 0 0.5rem;
-            transition: color 0.3s ease;
         }
-        .social-icons a:hover {
-            color: #42609b;
+        .social-icons a svg {
+            fill: #4a4a4a;
+            transition: fill 0.3s ease;
+        }
+        .social-icons a:hover svg {
+            fill: #42609b;
         }
         @media screen and (min-width: 769px) {
             .profile-image {
@@ -61,9 +63,21 @@
                         <p class="subtitle is-4 has-text-dark">I am the head of research and AI at <a href="https://www.dimagi.com/">Dimagi</a>, 
                             a social enterprise building technology to support service delivery for underserved populations, often in low-income settings. </p>
                         <div class="social-icons">
-                            <a href="https://scholar.google.com/citations?user=iVR3Ti8AAAAJ&hl=en" target="_blank"><i class="fa-brands fa-google-scholar"></i></a>
-                            <a href="https://github.com/bderenzi" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/bderenzi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://scholar.google.com/citations?user=iVR3Ti8AAAAJ&hl=en" target="_blank">
+                                <svg aria-label="Google Scholar" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+                                    <path d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"/>
+                                </svg>                                
+                            </a>
+                            <a href="https://github.com/bderenzi" target="_blank">
+                                <svg aria-label="GitHub" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024">
+                                  <path d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)"/>
+                                </svg>
+                              </a>                              
+                            <a href="https://www.linkedin.com/in/bderenzi/" target="_blank">
+                                <svg aria-label="LinkedIn" role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
